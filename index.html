@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frape House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <a href="#" class="brand-container" aria-label="Frape House, inicio">
+            <img src="img/logo.webp" alt="" class="logo">
+            <h1>FRAPE <span>HOUSE</span></h1>
+        </a>
+        <button id="cart-toggle-btn" class="cart-btn">
+            🛍️ Tu pedido
+            <span id="cart-count" class="cart-badge">0</span>
+            <span id="cart-total-preview">$0</span>
+        </button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <span class="spark" style="--x:8%;--d:0s"></span>
+            <span class="spark" style="--x:22%;--d:1.8s"></span>
+            <span class="spark" style="--x:38%;--d:3.4s"></span>
+            <span class="spark" style="--x:55%;--d:0.9s"></span>
+            <span class="spark" style="--x:70%;--d:2.6s"></span>
+            <span class="spark" style="--x:84%;--d:4.2s"></span>
+            <span class="spark" style="--x:93%;--d:1.2s"></span>
+        </div>
+        <div class="hero-copy">
+            <span id="open-status" class="open-chip">Revisando horario…</span>
+            <h2 class="hero-title">Frappes, malteadas y <em>antojos</em> con energía al máximo</h2>
+            <p class="hero-sub">Arma tu pedido y mándalo por WhatsApp. Para tomar aquí, llevar o a domicilio.</p>
+            <a href="#menu-container" class="hero-cta">Ver el menú</a>
+        </div>
+    </section>
+
+    <nav class="chips" aria-label="Categorías">
+        <a href="#categoria-frappes">🧊 Frappes</a>
+        <a href="#categoria-malteadas">🍦 Malteadas</a>
+        <a href="#categoria-postres">🍰 Postres y botanas</a>
+    </nav>
+
+    <main id="menu-container" class="menu-grid">
+        <!-- FRAPPES -->
+        <section class="category-section" id="categoria-frappes">
+            <div class="category-header">
+                <span class="category-subtitle">🧊 LOS CLÁSICOS</span>
+                <h2>FRAPPES</h2>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="badge">Especial</span>
+                        <img src="img/frappe-ferrero.webp" alt="Frappe especial de Ferrero" class="product-img"
+                            loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Frappe Especial de Ferrero</h3>
+                        <div class="product-footer">
+                            <span class="price">$75</span>
+                            <button class="btn-add" data-name="Frappe de Ferrero" data-price="75">+ Pedir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MALTEADAS -->
+        <section class="category-section" id="categoria-malteadas">
+            <div class="category-header">
+                <span class="category-subtitle">🍦 CREMOSIDAD EXTREMA</span>
+                <h2>MALTEADAS</h2>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="img/malteada-horchata.webp" alt="Malteada de horchata" class="product-img"
+                            loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Malteada de Horchata</h3>
+                        <div class="product-footer">
+                            <span class="price">$55</span>
+                            <button class="btn-add" data-name="Malteada de Horchata" data-price="55">+ Pedir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- POSTRES -->
+        <section class="category-section" id="categoria-postres">
+            <div class="category-header">
+                <span class="category-subtitle">🍰 ACOMPAÑA TUS BEBIDAS</span>
+                <h2>POSTRES Y BOTANAS</h2>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="img/crepa.webp" alt="Crepa con helado" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Crepas c/ Helado</h3>
+                        <div class="product-footer">
+                            <span class="price">$85</span>
+                            <button class="btn-add" data-name="Crepas c/ Helado" data-price="85">+ Pedir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="badge hot-badge">Picante</span>
+                        <img src="img/dorilocos.webp" alt="Dorilocos" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Dorilocos</h3>
+                        <div class="product-footer">
+                            <span class="price">$45</span>
+                            <button class="btn-add" data-name="Dorilocos" data-price="45">+ Pedir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p class="footer-brand">⚡ FRAPE <span>HOUSE</span></p>
+                <p class="footer-text">Despierta tu poder interior con cada bocado. El templo supremo de postres,
+                    frappes y botanas con auténtica vibra anime.</p>
+                <span class="radar">◉ RADAR DRAGÓN ACTIVO</span>
+            </div>
+
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <ul class="social-list">
+                    <li><a href="https://www.instagram.com/frape_house/" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            @frape_house</a></li>
+                    <li><a href="https://www.facebook.com/frapehouse" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                            @frapehouse</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Horario</h3>
+                <p class="hours"><strong>Todos los días</strong><br>12:00 p. m. – 10:00 p. m.</p>
+                <button type="button" id="open-map-btn" class="footer-btn">📍 Ver ubicación</button>
+            </div>
+
+            <div class="footer-col">
+                <h3>Transmisión instantánea</h3>
+                <p class="footer-text">¿Deseas encargar para recoger o festejar tu cumpleaños Z?</p>
+                <a id="footer-whatsapp" class="footer-btn" href="#" target="_blank" rel="noopener noreferrer">💬 Pedir
+                    por WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Frape House. Propuesta de demostración, no es el sitio oficial.</p>
+            <p><span class="ki">Nivel de Ki: +9001</span> <span class="sep">|</span> Hecho por SpiDev</p>
+        </div>
+    </footer>
+
+    <dialog id="map-dialog" class="map-dialog" aria-labelledby="map-title">
+        <div class="map-head">
+            <h2 id="map-title">📍 ¿Dónde estamos?</h2>
+            <button type="button" id="close-map-btn" class="close-cart-btn" aria-label="Cerrar mapa">✖</button>
+        </div>
+        <iframe id="map-frame" title="Ubicación de Frape House en Google Maps" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <a class="map-link" href="https://maps.app.goo.gl/f6MXf6QUkhdNiXEo7" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+    </dialog>
+
+    <button id="cart-bar" class="cart-bar" aria-label="Ver mi pedido">
+        <span>🛍️ <span id="bar-count">0</span> productos</span>
+        <span>Ver pedido · <strong id="bar-total">$0</strong></span>
+    </button>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <aside id="cart-drawer" class="cart-drawer hidden" aria-label="Mi pedido">
+        <div class="cart-header">
+            <h2>⚔️ MI PEDIDO</h2>
+            <button id="close-cart-btn" class="close-cart-btn" aria-label="Cerrar pedido">✖</button>
+        </div>
+        <div class="cart-items" id="cart-items-container"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>TOTAL:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn-checkout">Pedir por WhatsApp</button>
+        </div>
+    </aside>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
